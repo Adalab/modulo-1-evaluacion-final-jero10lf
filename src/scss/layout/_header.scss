@@ -1,2 +1,11 @@
-.page__header {
+.header {
+  height: 44px;
+  width: 44px;
+  background-color: $color-menu;
+  color: $color-white;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
