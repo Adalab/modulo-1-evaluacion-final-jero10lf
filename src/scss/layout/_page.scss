@@ -2,9 +2,10 @@
 
 .page {
   font-family: $font-text;
-  scroll-behavior: smooth;
+  font-size: 18;
 }
 .centralcolumn {
+  background-color: blueviolet;
   margin: 0 $margin-mobile;
   @media all and (min-width: 768px) {
     margin: 0 $margin-tablet;

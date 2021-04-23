@@ -1,0 +1,36 @@
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/cover.jpg);
+  background-color: transparent;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.herotext {
+  color: $color-white;
+  text-align: center;
+}
+.title {
+  font-family: $font-titles;
+  size: 42px;
+  text-transform: uppercase;
+  word-spacing: 100vw;
+  font-weight: bold;
+}
+.subtitle {
+  size: 16px;
+  text-transform: capitalize;
+  font-weight: regular;
+}
+.buttonhero {
+  width: 45px;
+  height: 45px;
+  background-color: $color-white;
+  border-radius: 22.5px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
