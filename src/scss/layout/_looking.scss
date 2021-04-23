@@ -1,0 +1,31 @@
+.looking {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: left;
+}
+.lookingimsonia {
+  font-size: 14px;
+  color: $color-insomnia;
+}
+.lookingtitle {
+  font-family: $font-titles;
+  font-size: 24 px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.lookingbotton {
+  box-sizing: border-box;
+  border: solid 2px $color-button;
+  width: 74px;
+  border-radius: 22.5px;
+  height: 45px;
+  text-align: center;
+  border-color: $color-button;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 2.25;
+  text-align: center;
+  text-decoration: none;
+  color: $color-button;
+}

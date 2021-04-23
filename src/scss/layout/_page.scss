@@ -4,9 +4,10 @@
   font-family: $font-text;
   font-size: 18;
 }
+
 .centralcolumn {
-  background-color: blueviolet;
-  margin: 0 $margin-mobile;
+  background-color: rgb(243, 181, 230);
+  padding: 0 $margin-mobile;
   @media all and (min-width: 768px) {
     margin: 0 $margin-tablet;
   }
