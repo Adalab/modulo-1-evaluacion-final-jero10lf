@@ -1,27 +1,47 @@
 .looking {
+  box-sizing: border-box;
+  min-height: 376px;
   display: flex;
   flex-direction: column;
-  align-content: center;
-  text-align: left;
+
+  width: 100%;
 }
 .lookingimsonia {
   font-size: 14px;
   color: $color-insomnia;
+  text-transform: capitalize;
+  margin-bottom: 1px;
+  line-height: 2.14;
 }
 .lookingtitle {
   font-family: $font-titles;
   font-size: 24 px;
   font-weight: bold;
   text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 15px;
+}
+
+.lookingtext {
+  line-height: 1.67;
+}
+.botton {
+  display: flex;
+  justify-content: left;
+  text-align: end;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
 }
 .lookingbotton {
   box-sizing: border-box;
   border: solid 2px $color-button;
   width: 74px;
-  border-radius: 22.5px;
   height: 45px;
+  border-radius: 22.5px;
+
   text-align: center;
-  border-color: $color-button;
   font-size: 20px;
   font-weight: 500;
   line-height: 2.25;

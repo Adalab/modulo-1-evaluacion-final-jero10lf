@@ -1,0 +1,36 @@
+.reasons {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat (3, 1fr);
+  background-color: $color-background-main;
+}
+.reasontext {
+}
+.reasontitle {
+  font-family: $font-titles;
+  font-size: 24;
+  font-weight: bold;
+  justify-self: center;
+  text-transform: capitalize;
+}
+.reasonsubtitle {
+  font-family: $font-titles;
+  font-weight: bold;
+  justify-self: center;
+  text-transform: capitalize;
+}
+.reasonbotton {
+  box-sizing: border-box;
+  border: solid 2px $color-button;
+  width: 184px;
+  border-radius: 22.5px;
+  height: 45px;
+  text-align: center;
+  border-color: $color-button;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 2.25;
+  text-decoration: none;
+  color: $color-white;
+  background-color: $color-button;
+}

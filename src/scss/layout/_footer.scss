@@ -1,2 +1,35 @@
 .footer {
+  background-color: $color-background-footer;
+  min-height: 465px;
+  padding: 60px 15px 45px 15px;
+}
+.footermenu {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  color: $color-white;
+
+  text-align: center;
+}
+.listlink {
+  list-style: none;
+  text-transform: uppercase;
+}
+.links {
+  color: $color-white;
+
+  text-decoration: none;
+}
+.buttonfooter {
+  width: 45px;
+  height: 45px;
+  background-color: $color-white;
+  border-radius: 22.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
 }
