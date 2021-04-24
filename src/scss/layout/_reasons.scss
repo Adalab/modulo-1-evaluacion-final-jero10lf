@@ -1,8 +1,23 @@
 .reasons {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat (3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-row-gap: 45px;
   background-color: $color-background-main;
+  text-align: center;
+  align-items: center;
+  @media all and (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 27.7px;
+    .reasontitle {
+      grid-column: 1/4;
+      grid-row: 1;
+    }
+    .bottonreason {
+      grid-row: 3;
+      grid-column: 1/4;
+    }
+  }
 }
 .reasontext {
 }
@@ -10,13 +25,12 @@
   font-family: $font-titles;
   font-size: 24;
   font-weight: bold;
-  justify-self: center;
   text-transform: capitalize;
 }
 .reasonsubtitle {
   font-family: $font-titles;
   font-weight: bold;
-  justify-self: center;
+
   text-transform: capitalize;
 }
 .reasonbotton {
