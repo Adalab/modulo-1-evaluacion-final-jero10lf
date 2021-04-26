@@ -1,6 +1,11 @@
 # Práctica realizada a partir de una plantilla del Starter kit de Adalab.
 
-Este Kit incluye un motor de plantillas HTML, el preprocesador SASS y un servidor local y muchas cosas más. El Kit nos ayuda a trabajar más cómodamente, nos automatiza tareas.
+El ejercicio consiste en desarrollar una página web de acuerdo a un diseño dado. Hay que resolver varios puntos:
+
+- Usar Sass.
+- Usar flexbox y CSS Grid.
+- Usar media queries.
+- Resolver algunas interacciones usando transiciones.
 
 ## Pasos seguidos para realizar esta práctica:
 

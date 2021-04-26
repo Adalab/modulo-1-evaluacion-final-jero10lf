@@ -2,14 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: roboto;
+  font-size: 18;
 }
 
 @import "core/variables";
 @import "core/reset";
 @import "layout/header";
 @import "layout/footer";
-@import "layout/page";
 @import "layout/hero";
 @import "layout/looking";
 @import "layout/reasons";
-@import "pages/index";

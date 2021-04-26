@@ -9,7 +9,13 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  padding-bottom: 53px;
+  padding: 0 15px 53px 15px;
+  @media all and (min-width: 768px) {
+    padding: 0 39px 45px 39px;
+  }
+  @media all and (min-width: 1200px) {
+    padding: 0 275px 13px 275px;
+  }
 }
 .herotext {
   color: $color-white;
