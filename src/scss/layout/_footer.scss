@@ -1,58 +1,109 @@
 .footer {
   background-color: $color-background-footer;
-  padding: 45px 15px 45px 15px;
+  padding: 60px 0 60px;
   min-height: 465px;
   line-height: 1.88;
-  font-size: 16px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+  @media all and (min-width: 768px) {
+    padding: 45px 0;
+    height: 240px;
+  }
 }
 .footermenu {
   color: $color-white;
   text-align: center;
-}
-.listlink {
-  list-style: none;
-  text-transform: uppercase;
-  align-content: center;
-}
-.linkweb {
-}
-.linksocialmedia {
-  padding-top: 30px;
-}
-.footersmall {
-  padding-top: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  /* align-items: center;*/
+  @media all and (min-width: 768px) {
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    height: 240px;
+  }
+  @media all and (min-width: 1200px) {
+    margin: 0 370px;
+  }
+}
+.footermenulink {
+  list-style: none;
+  text-transform: uppercase;
+  align-content: center;
+
+  @media all and (min-width: 768px) {
+    flex-grow: 2;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
+.linkweb {
+  list-style: none;
+  @media all and (min-width: 768px) {
+    width: calc(100% - 30px);
+  }
+  @media all and (min-width: 1200px) {
+    width: 100%;
+    margin: 0 0 0 30px;
+  }
+}
+.linksocialmedia {
+  list-style: none;
+  margin: 30px 0;
+  @media all and (min-width: 768px) {
+    width: calc(100% - 30px);
+    margin: 0 0 0 30px;
+  }
+  @media all and (min-width: 1200px) {
+    width: 100%;
+    margin: 0 0 0 30px;
+  }
+}
+.footersmall {
+  @media all and (min-width: 768px) {
+    flex-grow: 1;
+    text-align: left;
+    margin-right: 30px;
+  }
+}
+.footersmallcopy {
+  display: block;
+  font-size: 14px;
+  line-height: 2.14;
+}
+.footersmallclose {
+  display: block;
+  font-size: 14px;
+  line-height: 2.14;
 }
 .links {
   color: $color-white;
-
   text-decoration: none;
 }
 
 .buttonfooter {
+  position: absolute;
+  top: -22.5px;
+  left: calc(50% - 22.5px);
   width: 45px;
   height: 45px;
   background-color: $color-white;
   border-radius: 22.5px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
   top: -60px;
-  /*width: 45px;
-  height: 45px;
-  background-color: $color-white;
-  border-radius: 22.5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;*/
+  transition: background-color ease-in-out 2s;
+  transition: ease transform 2s;
+  &:hover {
+    background-color: sandybrown;
+    transform: translate(0, -50px);
+  }
+}
+
+.heart {
+  color: $color-button;
 }

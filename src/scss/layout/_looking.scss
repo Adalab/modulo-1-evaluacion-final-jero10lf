@@ -2,9 +2,18 @@
   box-sizing: border-box;
   min-height: 376px;
   display: flex;
+  align-items: flex-start;
   flex-direction: column;
-  padding: 0 15px 0 15px;
+  padding: 30px 15px 45px 15px;
   width: 100%;
+  @media all and (min-width: 768px) {
+    min-height: 330px;
+    padding-bottom: 60px;
+  }
+  @media all and (min-width: 1200px) {
+    min-height: 360px;
+    padding-top: 60px;
+  }
 }
 .lookingimsonia {
   font-size: 14px;
@@ -12,6 +21,13 @@
   text-transform: capitalize;
   margin-bottom: 1px;
   line-height: 2.14;
+  @media all and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+  @media all and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.88;
+  }
 }
 .lookingtitle {
   font-family: $font-titles;
@@ -20,10 +36,23 @@
   text-transform: capitalize;
   line-height: 1.25;
   margin-bottom: 15px;
+  @media all and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.73;
+    margin-bottom: 30px;
+  }
+  @media all and (min-width: 1200px) {
+    font-size: 32px;
+    line-height: 1.41;
+  }
 }
 
 .lookingtext {
   line-height: 1.67;
+  @media all and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 1.5;
+  }
 }
 .botton {
   display: flex;
@@ -40,12 +69,21 @@
   width: 74px;
   height: 45px;
   border-radius: 22.5px;
-
-  text-align: center;
   font-size: 20px;
   font-weight: 500;
   line-height: 2.25;
   text-align: center;
   text-decoration: none;
   color: $color-button;
+  transition: background-color 0.8s ease, color 0.8s ease;
+  &:hover {
+    background-color: $color-button;
+    color: $color-white;
+  }
+  @media all and (min-width: 768px) {
+    width: 91px;
+  }
+  @media all and (min-width: 1200px) {
+    width: 160px;
+  }
 }

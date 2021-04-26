@@ -4,7 +4,6 @@
   grid-row-gap: 45px;
   background-color: $color-background-main;
   text-align: center;
-  align-items: center;
   padding: 30px 15px 60px 15px;
   @media all and (min-width: 768px) {
     grid-template-columns: repeat(3, 1fr);
@@ -20,8 +19,7 @@
     }
   }
 }
-.reasontext {
-}
+
 .reasontitle {
   font-family: $font-titles;
   font-size: 24;
@@ -31,8 +29,22 @@
 .reasonsubtitle {
   font-family: $font-titles;
   font-weight: bold;
-
   text-transform: capitalize;
+}
+.bottonreason {
+  display: flex;
+  justify-content: center;
+  text-align: end;
+  align-items: center;
+  flex-grow: 1;
+}
+@keyframes cambio {
+  from {
+    background-color: rgba(255, 94, 0, 0.945);
+  }
+  to {
+    background-color: yellow;
+  }
 }
 .reasonbotton {
   box-sizing: border-box;
@@ -43,9 +55,10 @@
   text-align: center;
   border-color: $color-button;
   font-size: 20px;
-  font-weight: 500;
   line-height: 2.25;
   text-decoration: none;
   color: $color-white;
   background-color: $color-button;
+  animation-name: cambio;
+  animation-duration: infinitive;
 }

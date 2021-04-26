@@ -11,8 +11,8 @@
   align-items: center;
   padding-bottom: 53px;
 }
-
 .herotext {
+  width: 100%;
   color: $color-white;
   text-align: center;
 }
@@ -24,13 +24,28 @@
   word-spacing: 100vw;
   font-weight: bold;
   line-height: 1.31;
+  @media all and (min-width: 768px) {
+    margin-bottom: 20px;
+    font-size: 80px;
+    line-height: 1.33;
+  }
+  @media all and (min-width: 1200px) {
+    margin-bottom: 0px;
+    font-size: 100px;
+    line-height: 1.32;
+  }
 }
 .herosubtitle {
   size: 16px;
   text-transform: capitalize;
   font-weight: regular;
+  font-family: $font-text;
   margin-top: 10px;
   margin-bottom: 45px;
+  @media all and (min-width: 768px) {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
 }
 .buttonhero {
   width: 45px;
@@ -41,4 +56,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: background-color ease-in 1s, box-shadow ease 1s;
+  &:hover {
+    background-color: sandybrown;
+    box-shadow: 0 8px 15px rgba(253, 252, 252, 0.986);
+  }
+  @media all and (min-width: 768px) {
+    margin-bottom: 45px;
+  }
 }
