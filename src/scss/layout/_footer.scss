@@ -96,14 +96,15 @@
   align-items: center;
   position: relative;
   top: -60px;
-  transition: background-color ease-in-out 2s;
-  transition: ease transform 2s;
-  &:hover {
-    background-color: sandybrown;
-    transform: translate(0, -50px);
+  @keyframes intro {
+    0% {
+      background-color: $color-white;
+    }
+    50% {
+      background-color: $color-button;
+    }
   }
-}
-
-.heart {
-  color: $color-button;
+  animation-name: intro;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
