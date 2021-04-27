@@ -1,0 +1,27 @@
+.special-offer {
+  display: none;
+}
+@media all and (min-width: 768px) {
+  .special-offer {
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr;
+    background-color: $color-button;
+    gap: 2px;
+  }
+  .special-offertitle {
+    grid-column: 1/3;
+    grid-row: 1;
+    padding-bottom: 10px;
+    justify-content: center;
+  }
+  .special-offersubtitle {
+    grid-column: 1;
+    grid-row: 2;
+    justify-content: start;
+  }
+  .special-offertext {
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
